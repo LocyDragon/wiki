@@ -173,7 +173,7 @@ WATER_WORKER
 >
 > 接下来，我会给你展示所有的技能名 及其 值名
 
-##技能名: audio
+## 技能名: audio
 这个技能，可以给玩家播放一个音频(需要AudioBuffer插件支持)  
 这个插件你可以在这里获取:  
 
@@ -185,7 +185,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 第二个例子:  
 > audio ~ name=jinitaimei @RIGHT
 
-##技能名: command
+## 技能名: command
 这个技能，可以强制执行指令(控制台指令/玩家指令/op指令)  
 
 > 值名: type / ty / t ——  指令的种类(填op是op指令，填player是玩家指令，填console是控制台指令)  
@@ -196,7 +196,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 第二个例子:  
 > command ~ c=/op %player_name%;t=op; @RIGHT  
 
-##技能名: launch
+## 技能名: launch
 这个技能，可以发射(火球/凋零头/箭……)
 
 > 值名: type / ty / t ——  发射抛掷物的种类，见下面    
@@ -225,12 +225,12 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > launch ~ type=FireBall;d=15 @RIGHT 
 
-##技能名: lightning
+## 技能名: lightning
 这个技能，可以遭雷劈，但是不疼
 > 例子:  
 > lightning ~ @LEFT
 
-##技能名: msg
+## 技能名: msg
 这个技能，可以给玩家发送信息
 > 值名: msg / m ——  信息    
 > 例子:  
@@ -247,7 +247,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > near ~ d=20;x=10;y=10;z=10゛@RIGHT #给10x10x10范围的实体造成20点伤害  
 > 该技能不会对Citizens插件的假人生效
 
-##技能名: particle
+## 技能名: particle
 这个技能，可以在玩家的位置执行一个粒子效果组(这个粒子效果是在  
 .//plugins//RevivedLocyItem//Particles文件夹里的)    
 
@@ -255,7 +255,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > particle ~ n=HeadCircle @RIGHT
 
-##技能名: push
+## 技能名: push
 这个技能，可以给玩家一个推力      
 
 > 值名: dh ——高度上的推力(通常3就很高了)  
@@ -272,7 +272,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > reach ~ r=15;d=25 @LEFT
 
-##技能名: skill
+## 技能名: skill
 这个技能，可以执行一个技能组(在  
 .//plugins//RevivedLocyItem//Skills文件夹里的)   
 为什么使用技能组?  
