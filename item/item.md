@@ -159,3 +159,95 @@ WATER_WORKER
 > DAMAGE_ALL ~ 10  
 > MENDING ~ 1  
 > KNOCKBACK ~ 20  
+
+# · Skills 节点
+这个节点，你可以编辑物品的技能……  
+> 格式:  
+> 技能名 ~ 值名1=xxx;值名2=xxx;值名3=xxx;…… @触发条件  
+>
+> 已知触发条件: RIGHT(右键触发) / LEFT(左键触发)     
+>  
+> 例子:  
+> command ~ command=/suicide;type=player; @RIGHT  
+> 上面的例子就形成了一个右键执行玩家指令自杀的功能!
+>
+> 接下来，我会给你展示所有的技能名 及其 值名
+
+##技能名: audio
+这个技能，可以给玩家播放一个音频(需要AudioBuffer插件支持)  
+这个插件你可以在这里获取:  
+
+https://www.mcbbs.net/thread-832205-1-1.html [√]  
+
+> 值名: name / n —— 音乐的名称  
+> 例子:  
+> audio ~ n=TestMusic @RIGHT  
+> 第二个例子:  
+> audio ~ name=jinitaimei @RIGHT
+
+##技能名: command
+这个技能，可以强制执行指令(控制台指令/玩家指令/op指令)  
+
+> 值名: type / ty / t ——  指令的种类(填op是op指令，填player是玩家指令，填console是控制台指令)  
+> 值名: command / cmd / c —— 指令的内容(支持papi变量)  
+>
+> 例子:  
+> command ~ command=/suicide;type=player; @RIGHT  
+> 第二个例子:  
+> command ~ c=/op %player_name%;t=op; @RIGHT  
+
+##技能名: launch
+这个技能，可以发射(火球/凋零头/箭……)
+
+> 值名: type / ty / t ——  发射抛掷物的种类，见下面    
+> 
+> Arrow —— 箭  
+> DragonFireball —— 龙火球  
+> Egg —— 鸡蛋  
+> EnderPearl —— 末影珍珠  
+> Fireball —— 火球  
+> FishHook —— 鱼竿  
+> LargeFireball —— 巨型火球  
+> LingeringPotion —— 喷射无属性药水  
+> LlamaSpit —— 羊驼的口水  
+> ShulkerBullet —— 潜影贝的子弹(可能会打到自己)  
+> SmallFireball —— 小火球  
+> Snowball —— 雪球  
+> SpectralArrow —— 特效箭(比如毒箭)  
+> SplashPotion —— 喷溅药水(?)  
+> ThrownExpBottle —— 经验瓶  
+> ThrownPotion —— 喷溅药水(?)  
+> Trident —— 三叉戟  
+> WitherSkull —— 凋零头  
+> 
+> 值名: damage / d / da / dg —— 造成的伤害(只有能造成伤害的投掷物才能这么搞，比如经验瓶就不行)  
+>
+> 例子:  
+> launch ~ type=FireBall;d=15 @RIGHT 
+
+##技能名: lightning
+这个技能，可以遭雷劈，但是不疼
+> 例子:  
+> lightning ~ @LEFT
+
+##技能名: msg
+这个技能，可以给玩家发送信息
+> 值名: msg / m ——  信息    
+> 例子:  
+> msg ~ m=&7&l>> &b哈喽(,,･∀･)ﾉ゛@RIGHT
+
+##技能名: near
+这个技能，可以给附近的实体造成伤害
+> 值名: damage / d / da / dg ——  造成的伤害  
+> 值名: x  
+> 值名: y  
+> 值名: z  
+> 以上三个值是以x、y、z的立方体为攻击范围，造成伤害     
+> 例子:  
+> near ~ d=20;x=10;y=10;z=10゛@RIGHT #给10x10x10范围的实体造成20点伤害  
+> 该技能不会对Citizens插件的假人生效
+
+
+
+
+
