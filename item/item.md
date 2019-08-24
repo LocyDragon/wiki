@@ -247,7 +247,41 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > near ~ d=20;x=10;y=10;z=10゛@RIGHT #给10x10x10范围的实体造成20点伤害  
 > 该技能不会对Citizens插件的假人生效
 
+##技能名: particle
+这个技能，可以在玩家的位置执行一个粒子效果组(这个粒子效果是在  
+.//plugins//RevivedLocyItem//Particles文件夹里的)    
 
+> 值名: name / n —— 粒子效果名称  
+> 例子:  
+> particle ~ n=HeadCircle @RIGHT
 
+##技能名: push
+这个技能，可以给玩家一个推力      
+
+> 值名: dh ——高度上的推力(通常3就很高了)  
+> 值名: dp ——水平上的推力(通常1就很高了，负数往后推)  
+> 例子:  
+> push ~ dp=-1.6;dh=0.8 @LEFT
+
+##技能名: reach
+这个技能，可以凭空攻击一个很远很远的怪物      
+
+> 值名: damage / d / dg / da —— 伤害  
+> 值名: range / r —— 最大可以够到的范围  
+>
+> 例子:  
+> reach ~ r=15;d=25 @LEFT
+
+##技能名: skill
+这个技能，可以执行一个技能组(在  
+.//plugins//RevivedLocyItem//Skills文件夹里的)   
+为什么使用技能组?  
+1.可以设置冷却时间  
+2.可以每个技能之间有延迟      
+
+> 值名: name / n —— 技能组名   
+>
+> 例子:  
+> skill ~ name=ExampleSkillReach @LEFT
 
 
