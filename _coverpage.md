@@ -4,7 +4,7 @@
 
 - 欢迎使用LocyItem-重生
 
-[![stars](https://badgen.net/github/stars/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/LocyDragon/RevivedLocyItem) [![forks](https://badgen.net/github/forks/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/LocyDragon/RevivedLocyItem)
+[![stars](https://badgen.net/github/stars/LocyDragon/RevivedLocyItem?icon=github&color=4ab8a1)](https://github.com/LocyDragon/RevivedLocyItem) [![forks](https://badgen.net/github/forks/LocyDragon/RevivedLocyItem?icon=github&color=4ab8a1)](https://github.com/LocyDragon/RevivedLocyItem)
 
 [GitHub-开源](<https://github.com/LocyDragon/RevivedLocyItem>)
 [开始阅读](README.md)
