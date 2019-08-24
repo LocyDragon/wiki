@@ -1,0 +1,10 @@
+<img width="180px" style="border-radius: 50%" bor src="https://i.loli.net/2019/08/24/XSK4Ltxd9rj7aDN.png">
+
+# RevivedLocyItem——Wiki
+
+- 欢迎使用LocyItem-重生
+
+[![stars](https://badgen.net/github/stars/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/LocyDragon/RevivedLocyItem) [![forks](https://badgen.net/github/forks/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/LocyDragon/RevivedLocyItem)
+
+[GitHub-开源](<https://github.com/LocyDragon/RevivedLocyItem>)
+[开始阅读](README.md)
