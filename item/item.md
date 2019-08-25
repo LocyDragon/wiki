@@ -1,7 +1,7 @@
 # 物品(Item)
 # 示例物品
 >示例物品可以在  
-./plugins/RevivedLocyItem/Items/ExampleItem.yml查看，建议配合实例物品来阅读wiki!  
+./plugins/RevivedLocyItem/Items/ExampleItem.yml查看，建议配合示例物品来阅读wiki!  
 >注意节点大小写
   
 # · name 节点
@@ -220,10 +220,10 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > Trident —— 三叉戟  
 > WitherSkull —— 凋零头  
 > 
-> 值名: damage / d / da / dg —— 造成的伤害(只有能造成伤害的投掷物才能这么搞，比如经验瓶就不行)  
+> 值名: damage / d / da / dg —— 造成的伤害(只有能造成伤害的投掷物才能这么搞，比如经验瓶就不行，支持papi)  
 >
 > 例子:  
-> launch ~ type=FireBall;d=15 @RIGHT 
+> launch ~ type=FireBall;d=15 * %vault_balance% @RIGHT 
 
 ## 技能名: lightning
 这个技能，可以遭雷劈，但是不疼
@@ -238,13 +238,13 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 
 ##技能名: near
 这个技能，可以给附近的实体造成伤害
-> 值名: damage / d / da / dg ——  造成的伤害  
+> 值名: damage / d / da / dg ——  造成的伤害(支持papi)  
 > 值名: x  
 > 值名: y  
 > 值名: z  
 > 以上三个值是以x、y、z的立方体为攻击范围，造成伤害     
 > 例子:  
-> near ~ d=20;x=10;y=10;z=10゛@RIGHT #给10x10x10范围的实体造成20点伤害  
+> near ~ d=20 * %player_health%;x=10;y=10;z=10 @RIGHT #给10x10x10范围的实体造成20点伤害  
 > 该技能不会对Citizens插件的假人生效
 
 ## 技能名: particle
@@ -266,16 +266,16 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 ##技能名: reach
 这个技能，可以凭空攻击一个很远很远的怪物      
 
-> 值名: damage / d / dg / da —— 伤害  
+> 值名: damage / d / dg / da —— 伤害(支持papi)  
 > 值名: range / r —— 最大可以够到的范围  
 >
 > 例子:  
-> reach ~ r=15;d=25 @LEFT
+> reach ~ r=15;d=25 * %player_level% @LEFT
 
 ## 技能名: skill
 这个技能，可以执行一个技能组(在  
 .//plugins//RevivedLocyItem//Skills文件夹里的)   
-为什么使用技能组?  
+为什么使用技能组(使用技能组的好处)?  
 1.可以设置冷却时间  
 2.可以每个技能之间有延迟      
 
@@ -283,5 +283,82 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 >
 > 例子:  
 > skill ~ name=ExampleSkillReach @LEFT
+
+# · Heat 节点
+在这个节点下，可以填写当玩家用RPG武器的技能成功攻击生物时造成的技能  
+格式:  
+> 技能名 ~ 值名1=xxx;值名2=xxx;值名3=xxx;…… @触发对象   
+> 触发对象中 self 是自己，target是攻击对象   
+注意：触发对象不是所有技能都有的，比如说攻击成功后播放音乐，只能播放给玩家  
+>我们下面会特别说明哪些需要有触发对象……
+
+## 击打技能名: audio
+这个击打技能，可以让你成功攻击玩家后，给玩家播放音效  
+该技能不需要填写触发对象  
+
+(需要AudioBuffer插件支持)  
+这个插件你可以在这里获取:  
+
+https://www.mcbbs.net/thread-832205-1-1.html [√]  
+
+> 值名: name / n —— 音频名  
+>
+> 例子:  
+> audio ~ n=TestMusic
+
+## 击打技能名: command
+这个击打技能，可以让你成功攻击玩家后，给玩家强制执行指令  
+该技能不需要填写触发对象  
+
+> 值名: type / ty / t ——  指令的种类(填op是op指令，填player是玩家指令，填console是控制台指令)  
+> 值名: command / cmd / c —— 指令的内容(支持papi变量)  
+>
+> 例子:  
+> command ~ t=op;cmd=/kill %player_name%
+
+## 击打技能名: lightning
+这个击打技能，可以让你成功攻击玩家后，给玩家或者击打对象的位置显示一条没有伤害的雷电  
+该技能"需要"填写触发对象  
+>
+> 例子:  
+> lightning ~ @target  
+
+## 击打技能名: line
+这个击打技能，可以在你和被攻击的实体之间牵一条线  
+该技能不需要填写触发对象  
+> 值名: type / ty / t —— 线的粒子效果名称(见粒子效果组部分)    
+>
+> 例子:  
+> line ~ t=FLAME  
+
+## 击打技能名: msg
+这个击打技能，可以在攻击后给玩家发送信息  
+该技能不需要填写触发对象  
+> 值名: msg / m —— 信息内容(可以用颜色代码)    
+>
+> 例子:  
+> msg ~ msg=&a哈哈哈哈
+
+## 击打技能名: particle
+这个击打技能，可以在玩家或被攻击对象的位置执行一个粒子效果组(这个粒子效果是在  
+.//plugins//RevivedLocyItem//Particles文件夹里的) 
+
+该技能"需要"填写触发对象     
+
+> 值名: name / n —— 粒子效果名称  
+> 例子:  
+> particle ~ n=HeadCircle @target
+
+## 击打技能名: push
+这个击打技能，可以给玩家一个推力   
+该技能"需要"填写触发对象        
+
+> 值名: dh ——高度上的推力(通常3就很高了)  
+> 值名: dp ——水平上的推力(通常1就很高了，负数往后推)  
+> 例子:  
+> push ~ dp=-1;dh=1 @self
+
+
+
 
 
