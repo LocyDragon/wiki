@@ -1,7 +1,7 @@
 # 技能组(Skills)
 # 示例技能组
 >示例物品可以在  
-./plugins/RevivedLocyItem/Items/ExampleSkills.yml查看，建议配合示例技能组来阅读wiki!  
+./plugins/RevivedLocyItem/Skills/ExampleSkills.yml查看，建议配合示例技能组来阅读wiki!  
 >注意节点大小写
 >
 >请确保你已经阅读完 [Item物品] 相关内容!
