@@ -2,6 +2,8 @@
 > 你现在在重生版LocyItem的wiki界面
 
 你可以通过wiki来获取该插件的使用方法！  
+本插件需要PlaceHolderAPI插件支持运行    
+如果乱码，可以使用notepad++自行转码……  
   
 基础:  
 指令列表:  

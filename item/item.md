@@ -61,7 +61,7 @@ true即为打开该属性，false即为关闭该属性
 示例:  
 > DAMAGE ~ 100  
 > DAMAGE ~ (2*10)/4  
-> DAMAGE ~ (%vault_eco_balance% * 2) / 100
+> DAMAGE ~ (%vault_eco_balance%*2)/100
 
 ## 属性名: ATTACK_SPEED
 这项属性可以修改物品的攻击速度(低版本不会生效)   
