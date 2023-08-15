@@ -246,7 +246,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > msg ~ m=&7&l>> &b哈喽(,,･∀･)ﾉ゛@RIGHT
 
-##技能名: near
+## 技能名: near
 这个技能，可以给附近的实体造成伤害
 > 值名: damage / d / da / dg ——  造成的伤害(支持papi)  
 > 值名: x  
@@ -255,7 +255,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 以上三个值是以x、y、z的立方体为攻击范围，造成伤害     
 > 例子:  
 > near ~ d=20 * %player_health%;x=10;y=10;z=10 @RIGHT #给10x10x10范围的实体造成20点伤害  
-> 该技能不会对Citizens插件的假人生效
+> 该技能不会对Citizens插件的假人与盔甲架生效
 
 ## 技能名: particle
 这个技能，可以在玩家的位置执行一个粒子效果组(这个粒子效果是在  
