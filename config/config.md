@@ -2,7 +2,7 @@
 # 默认配置文件(如果乱码自行转码)
 prefix: "&7[&bRevivedLocyItem&7]"#前缀  
 InfoSync: true #显示物品同步信息  
-SyncDelay: 5 #同步的秒数间隔(秒)服务器卡可以调大一点，比如10    
+SyncDelay: 5 #改为-1表示不同步  
 Lang: #语言信息  
   lang-EncodeSet: ""  
   lang-ShowVersion: "&aRevivedLocyItem-{version} 插件已经在您的服务器上加载了.(*^▽^*)"  
