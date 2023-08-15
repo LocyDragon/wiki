@@ -7,14 +7,23 @@
   
 基础:  
 指令列表:  
+
 /rli version —— 查看插件主版本  
+
 /rli reload —— 重载插件  
-/rli item [物品名] —— 获取一个RPG物品  
+
+/rli item [物品名] —— 获取一个RPG物品 
+
 /rli particle [粒子效果组名] —— 在脚底下播放一个粒子效果组  
+
 /rli help —— 查看帮助
+
 /rli skill [技能组名] —— 播放一个技能组
+
 /rli list —— 查看所有能用的物品
+
 /rli as [物品名] —— 赋予手上物品某个LocyItem的功能
+
 
 权限:  
 
