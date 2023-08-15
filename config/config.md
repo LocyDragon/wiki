@@ -12,3 +12,4 @@ Lang: #语言信息
   lang-Reload: "{prefix}&c重载配置文件成功(*^▽^*)"  
   lang-Sync: "&b同步了{amount}个RPG物品……"  
   lang-Particle: "{prefix}&c请使用/rli p [粒子效果名称] ——在你的脚下演示一个粒子效果!"  
+  lang-Skill: "{prefix}&c请使用/rli skill [技能组名称] ——播放一个技能组吧!"
