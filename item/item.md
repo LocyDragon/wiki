@@ -312,6 +312,19 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > title ~ title=&7>>> &b&l剑阵 &7<<<;subtitle=随便输入一些什么;in=3;stay=3;out=3
 
+## 技能名: sound
+这个技能，可以播放一个音效  
+
+> 值名: type / t —— 音效种类（低版本(1.8)请看https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/Sound.html;高版本(1.13.2+)请看https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html）
+>
+> 值名: volume / v —— 音量(0-1)
+>
+> 值名：pitch / p —— 音高(0-1)
+>
+> 例子:  
+> sound ~ type=ENDERDRAGON_DEATH;pitch=0.7;volume=1
+
+
 # · Heat/Hit 节点
 在这个节点下，可以填写当玩家用RPG武器的技能成功攻击生物时造成的技能
 
