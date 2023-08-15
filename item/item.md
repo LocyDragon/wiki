@@ -315,7 +315,11 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 ## 技能名: sound
 这个技能，可以播放一个音效  
 
-> 值名: type / t —— 音效种类（低版本(1.8)请看https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/Sound.html;高版本(1.13.2+)请看https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html）
+> 值名: type / t —— 音效种类
+>
+> 低版本(1.8)请看https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/Sound.html;
+>
+> 高版本(1.13.2+)请看https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
 >
 > 值名: volume / v —— 音量(0-1)
 >
