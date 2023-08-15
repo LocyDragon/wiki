@@ -273,7 +273,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > push ~ dp=-1.6;dh=0.8 @LEFT
 
-##技能名: reach
+## 技能名: reach
 这个技能，可以凭空攻击一个很远很远的怪物      
 
 > 值名: damage / d / dg / da —— 伤害(支持papi)  
