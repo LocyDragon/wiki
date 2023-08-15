@@ -21,7 +21,44 @@
 
 
 ## · 条件类型：random
+这个条件，代表该技能组的执行概率(0-1)
 
+> value = 概率 
+>
+> 例子:  
+>
+> random ~ value=0.75;fail=&c这个技能只有75%的概率被执行哦~
+
+## · 条件类型：permission/perm
+这个条件，代表判断玩家是否有权限使用某个技能
+
+> value = 权限名称
+>
+> 例子:  
+>
+> permission ~ value=MyItem.use;fail=&c你没有权限使用这个物品
+
+## · 条件类型：compare
+这个条件，代表比较（数据/字符串）
+
+> value = 比较类型
+>
+> 关于比较类型，可以写
+>
+>
+> ①数值比较(>、<、=)
+>
+> 如:  1>0、5*5>2、%player_level%<20、%player_level%*2=8
+>
+> ②字符串比较(equals)，自动忽略大小写
+>
+> 如：%player_name% equals FuzhuDada
+>
+> 例子:  
+>
+> compare ~ value=%player_level% > 9;fail=只有十级和以上才能用呢.
+>
+> compare ~ value=%player_name% equals FuzhuDada;fail=只有FuzhuDada可以使用！
 
 # · Skills 节点
 这个地方，你可以书写一些技能。与Item(物品)里面的Skills不同的地方是，  
