@@ -294,6 +294,20 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > skill ~ name=ExampleSkillReach @LEFT
 
+## 技能名: title
+这个技能，可以播放一个title   
+
+> 值名: title / t —— 主标题
+> 值名: subtitle / s —— 子标题
+> 值名：in —— 淡入时间(秒)
+> 值名：stay —— 持续时间(秒)
+> 值名：out —— 淡出时间(秒)
+>
+> 注意：淡入或淡出时间超过5秒会直接变成一下子弹出来的效果
+>
+> 例子:  
+> title ~ title=&7>>> &b&l剑阵 &7<<<;subtitle=随便输入一些什么;in=3;stay=3;out=3
+
 # · Heat/Hit 节点
 在这个节点下，可以填写当玩家用RPG武器的技能成功攻击生物时造成的技能
 
