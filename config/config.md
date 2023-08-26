@@ -3,7 +3,7 @@
 prefix: "&7[&bRevivedLocyItem&7]"#前缀  
 InfoSync: true #显示物品同步信息  
 SyncDelay: 5 #改为-1表示不同步  
-Lang: #语言信息  
+## Lang: #语言信息  
   lang-EncodeSet: ""  
   lang-ShowVersion: "&aRevivedLocyItem-{version} 插件已经在您的服务器上加载了.(*^▽^*)"  
   lang-illegal: "物品{item}在{where}处写错了![○･｀Д´･ ○]"  
@@ -13,3 +13,5 @@ Lang: #语言信息
   lang-Sync: "&b同步了{amount}个RPG物品……"  
   lang-Particle: "{prefix}&c请使用/rli p [粒子效果名称] ——在你的脚下演示一个粒子效果!"  
   lang-Skill: "{prefix}&c请使用/rli skill [技能组名称] ——播放一个技能组吧!"
+## Option:
+  bullet-range: 100 #超过玩家半径100的返回子弹将不会作用(用于节能)
