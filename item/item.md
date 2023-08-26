@@ -317,7 +317,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 
 > 值名: type / t —— 音效种类
 >
-> 低版本(1.8)请看https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/Sound.html;
+> 低版本(1.8)请看https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/Sound.html
 >
 > 高版本(1.13.2+)请看https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
 >
@@ -327,6 +327,22 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 >
 > 例子:  
 > sound ~ type=ENDERDRAGON_DEATH;pitch=0.7;volume=1
+
+## 技能名: potion
+这个技能，给玩家自身一个药水效果
+
+> 值名: type / t —— 药水效果种类
+>
+> 低版本(1.8)请看https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/potion/PotionEffectType.html
+>
+> 高版本(1.13.2+)请看https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+>
+> 值名: duration / d —— 药水时长（秒）
+>
+> 值名：amplifier / a —— 药水等级(请输入整数)
+>
+> 例子:  
+> potion ~ type=SPEED;d=30;a=1
 
 ## ☆技能名: box
 这个技能，可以在相对玩家某个坐标，设置一个固定长宽高的盒子，在这个盒子里头，可以对任何生物（除了盔甲架与Citizens的NPC）外造成伤害 
