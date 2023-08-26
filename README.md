@@ -32,13 +32,16 @@
 ## 关于与mm的兼容：
 
 你可以在mythicmobs中使用rli的粒子效果，使用方式如下：
+
 Skills:
-  - rparticle{name=ExampleSkill} @Self
+  
+  rparticle{name=ExampleSkill} @Self
+  
 ExampleSkill可以替换成你的粒子效果在Rli插件中的名称
 
 
 
 
-##关于与ap和sx的兼容：
+## 关于与ap和sx的兼容：
 
 这两个插件是本身兼容的，你可能需要在ap中的 插件伤害 设置为true
