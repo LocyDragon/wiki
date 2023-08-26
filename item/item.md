@@ -444,6 +444,22 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 例子:  
 > push ~ dp=-1;dh=1 @self
 
+## 击打技能名: potion
+这个击打技能，可以给玩家一个药水效果   
+该技能"需要"填写触发对象        
+
+> 值名: type / t —— 药水效果种类
+>
+> 低版本(1.8)请看https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/potion/PotionEffectType.html
+>
+> 高版本(1.13.2+)请看https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+>
+> 值名: duration / d —— 药水时长（秒）
+>
+> 值名：amplifier / a —— 药水等级(请输入整数)
+>
+> 例子:  
+> potion ~ type=SLOW;d=30;a=100 @target
 
 
 
