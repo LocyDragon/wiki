@@ -399,6 +399,34 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 
 但是建议使用"Hit"
 
+### 如何使用变量：
+
+在这个节点下，你可以使用受害者变量与玩家自身变量
+
+受害者变量需要在原本的papi变量格式中加入"target:"
+
+比如%target:player_level%
+
+注意：如果被攻击者不是玩家则该papi变量会失效
+
+但是我们提供一些Rli自带的变量能适用于所有的怪物（活着的,不包括盔甲架、TNT）！
+
+%target:health% - 对象的剩余血量
+
+%target:maxhealth%" - 对象的最大血量
+
+%target:name% - 对象的名字
+
+%target:customname% - 对象的自定义名字(如mm)
+
+%target:lastdamage% - 对象的上一次受到的伤害
+
+%target:type% - 对象的英文名种类
+
+%target:damage% - 这一次攻击造成的伤害
+
+------------------------------------
+
 格式:  
 > 技能名 ~ 值名1=xxx;值名2=xxx;值名3=xxx;…… @触发对象   
 > 触发对象中 self 是自己，target是攻击对象   
