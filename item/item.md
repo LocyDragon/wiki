@@ -435,7 +435,7 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 
 ## 击打技能名: audio
 这个击打技能，可以让你成功攻击玩家后，给玩家播放音效  
-该技能不需要填写触发对象  
+该技能需要填写触发对象  
 
 (需要AudioBuffer插件支持)  
 这个插件你可以在这里获取:  
@@ -445,17 +445,17 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 > 值名: name / n —— 音频名  
 >
 > 例子:  
-> audio ~ n=TestMusic
+> audio ~ n=TestMusic @self
 
 ## 击打技能名: command
 这个击打技能，可以让你成功攻击玩家后，给玩家强制执行指令  
-该技能不需要填写触发对象  
+该技能需要填写触发对象 ，如果对象不是玩家则不执行指令 
 
 > 值名: type / ty / t ——  指令的种类(填op是op指令，填player是玩家指令，填console是控制台指令)  
 > 值名: command / cmd / c —— 指令的内容(支持papi变量)  
 >
 > 例子:  
-> command ~ t=op;cmd=/kill %player_name%
+> command ~ t=op;cmd=/kill %player_name% @self
 
 ## 击打技能名: lightning
 这个击打技能，可以让你成功攻击玩家后，给玩家或者击打对象的位置显示一条没有伤害的雷电  
@@ -474,11 +474,11 @@ https://www.mcbbs.net/thread-832205-1-1.html [√]
 
 ## 击打技能名: msg
 这个击打技能，可以在攻击后给玩家发送信息  
-该技能不需要填写触发对象  
+该技能需要填写触发对象，如果对象不是玩家则不执行消息
 > 值名: msg / m —— 信息内容(可以用颜色代码)    
 >
 > 例子:  
-> msg ~ msg=&a哈哈哈哈
+> msg ~ msg=&a哈哈哈哈 @self
 
 ## 击打技能名: particle
 这个击打技能，可以在玩家或被攻击对象的位置执行一个粒子效果组(这个粒子效果是在  
