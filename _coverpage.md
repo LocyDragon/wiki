@@ -1,6 +1,6 @@
 <img width="180px" style="border-radius: 50%" bor src="https://i.loli.net/2019/08/24/XSK4Ltxd9rj7aDN.png">
 
-# RevivedLocyItem——Wiki(更新至v.1.4.0)
+# RevivedLocyItem——Wiki(更新至v.1.4.1)
 
 - 欢迎使用LocyItem-重生
 
